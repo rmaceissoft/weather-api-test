@@ -183,3 +183,9 @@ REDIS_URL = env("REDIS_URL", default="")
 if REDIS_URL:
     CACHES["default"]["BACKEND"] = "redis_cache.RedisCache"
     CACHES["default"]["LOCATION"] = REDIS_URL
+
+
+# Open Weather Map
+# =====================================
+
+OPEN_WEATHER_MAP_API_KEY = env("OPEN_WEATHER_MAP_API_KEY")

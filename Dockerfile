@@ -3,7 +3,7 @@
 # -------------------------------------
 # NOTE: Create a container appropriate for Django and Django-Geo
 
-FROM python:3.6
+FROM python:3.7
 
 # NOTE: Update and install system dependencies
 #       Django-Geo Libs: binutils, libproj-dev, gdal-bin, libgeoip1, python-gdal
@@ -46,7 +46,7 @@ WORKDIR /usr/app
 COPY poetry.lock /usr/app
 COPY pyproject.toml /usr/app
 
-RUN poetry install --no-interaction --no-ansi --no-dev
+RUN poetry install --no-interaction --no-ansi
 
 # NOTE: Mostly everything that follows will invalidate the cache
 
