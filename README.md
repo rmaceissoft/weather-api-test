@@ -49,3 +49,7 @@ try the following command from another terminal
 ```bash    
 pytest
 ```     
+
+## TODOs / Improvements:
+
+- Reuse the python library [pyowm](https://pypi.org/project/pyowm/) instead of the custom class `app.weather.utils.OpenWeatherMapClient`.
