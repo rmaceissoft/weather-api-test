@@ -34,6 +34,13 @@
     
     http://localhost:8000/weather?city=Lima&country=pe
     
+## Test from Heroku
+
+This project has also been deployed to heroku:
+
+https://weather-api-test-demo.herokuapp.com/weather?city=Lima&country=pe 
+
+
 ## Running tests
 
 Unit tests are implemented with [pytest](https://docs.pytest.org/). In order to execute them
@@ -42,4 +49,3 @@ try the following command from another terminal
 ```bash    
 pytest
 ```     
-
